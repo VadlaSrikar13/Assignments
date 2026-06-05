@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+     {
+           margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #e5e5e5;
+        }
+
+        .card {
+            width: 420px;
+            background: #fff;
+            border-radius: 30px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .cover {
+            height: 220px;
+            background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200") center/cover;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            position: relative;
+        }
+
+        .add-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            background: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-img {
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .profile-img img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            object-fit: cover;
+        }
+
+        .content {
+            text-align: center;
+            padding: 80px 30px 30px;
+        }
+
+        .content h2 {
+            font-size: 38px;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            color: #777;
+            font-size: 22px;
+            line-height: 1.6;
+        }
+
+        .stats {
+            margin-top: 35px;
+            border: 1px solid #e0e0e0;
+            border-radius: 25px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .stats h3 {
+            font-size: 30px;
+            color: #111;
+            margin-bottom: 8px;
+        }
+
+        .stats span {
+            color: #777;
+            font-size: 18px;
+        }
+
+        .social {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .social a {
+            color: #111;
+            font-size: 35px;
+            transition: .3s;
+        }
+
+        .social a:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="cover">
+            <button class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <div class="profile-img">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300" alt="Profile">
+        </div>
+
+        <div class="content">
+            <h2>Noah Thompson</h2>
+
+            <p>
+                Product Designer who focuses on<br>
+                simplicity & usability.
+            </p>
+
+            <div class="stats">
+                <div>
+                    <h3>72.9K</h3>
+                    <span>Likes</span>
+                </div>
+
+                <div>
+                    <h3>828</h3>
+                    <span>Posts</span>
+                </div>
+
+                <div>
+                    <h3>342.9K</h3>
+                    <span>Views</span>
+                </div>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-threads"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
